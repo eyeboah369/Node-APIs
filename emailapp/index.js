@@ -13,15 +13,16 @@ const xoauth2 = require('xoauth2');
     });*/
 
     var transporter = nodemailer.createTransport({
-        service: 'gmail',
-
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
         auth: {
-           
+                type: 'OAuth2',
                 user: 'eyeboahcw@gmail.com',
                 clientId: '122144668851-94l16u0esjtln3or6u9m0v4akr8b68kn.apps.googleusercontent.com',
                 clieentSecret: 'B7MGm4n-DoYvGus7qy_F-lMo',
-                clientToken: '1/JszIDJMOAhAwQ0MceEDvwkdaUtv5Zcnx7KBjnogE2_8',
-                accessToken: 'ya29.GlvSBpU12cMSC0kTYqUWJb9B0fHnTGwA_HkkuFoTLj70mjZKu5Ck9_VjZiS77tbta92qw3S2kTnSujniRQs1vX0TblOqmJ5P16AQNlN9P5JU_TmgBHk7zuhZKEkL'
+                refreshToken: '1/qWNVwYXXBF1kKxgo9LTw3R33XjLzTVpxc6-6kRkDizY',
+                accessToken: 'ya29.GlvSBjtngyPDJ7grazwYwbxl4k3B_P7l9iG97wbVjQAwzpD4OrwX0J27CVGSQBAoqdFBkx7cgVrqFYBJiIYD-_qipwt-eFi3cvRFeYNDUyZGNwpu8tPwXLU_1iCt'
            
         },
     });
