@@ -1,0 +1,16 @@
+{
+  "name": "emailapp",
+  "version": "1.0.0",
+  "description": "App for testing and scaling nodemailer module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Evans Yeboah Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemailer": "^5.1.1",
+    "xoauth2": "^1.2.0"
+  }
+}
