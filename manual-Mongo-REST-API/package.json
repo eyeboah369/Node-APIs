@@ -1,0 +1,16 @@
+{
+  "name": "loginapi",
+  "version": "1.0.0",
+  "description": "Project to create and integrate google APIs and mongodb database",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Evans Yeboah Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  }
+}

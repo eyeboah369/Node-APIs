@@ -12,13 +12,37 @@ const xoauth2 = require('xoauth2');
         res.send('GET request works');
     });*/
 
+    /* ***********************************  INSTRUCTIONS FOR GENERATING TRANSPORTER   **********************************************
+    
+        1. follow the syntax of the json attributes bellow inside of the transporter variable (host, port, secure, auth{}, type, user, clientId,
+            clientSecret, refreshToken, accessToken) the last four attributes need special attention
+        2. go to google developer API console and create a new project and enable to gmail API
+        3. On the left hand panel click on credentials and click on OAuth2 client ID creator
+        4. Scroll down to the bottom of the new client ID page to the authorized client URIs section and in the bottom most input field input:
+                https://developers.google.com/oauthplayground
+        5. Save the new clients OAuth2 client ID and the client id and secret will be generated an available to copy and paste in the json values below
+        6. Then go back to https://developers.google.com/oauthplayground and click the settings icon and click on the option for using your own
+            OAuth credentials and copy and paste the cleintID and clientSecret below in the input fields.
+        7. To the left to input a value to Authorize APIs input ==> https://mail.google.com/ then click authorize
+        8. When redirected give access to the project to the appropriate gmail account
+        9. Click on the option to exchange Auth code for tokens and when generated copy the refresh token and access token into the json fields below
+        10. Run the script and the email should be sent and good to go.
+    
+    
+    */
     var transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
         secure: true,
         auth: {
-<<<<<<< HEAD
                 type: 'OAuth2',
+<<<<<<< HEAD
+                user: 'eyeboahcw@gmail.com',
+                clientId: '122144668851-94l16u0esjtln3or6u9m0v4akr8b68kn.apps.googleusercontent.com',
+                clientSecret: 'B7MGm4n-DoYvGus7qy_F-lMo',
+                refreshToken: '1/qWNVwYXXBF1kKxgo9LTw3R33XjLzTVpxc6-6kRkDizY',
+                accessToken: 'ya29.GlvSBjtngyPDJ7grazwYwbxl4k3B_P7l9iG97wbVjQAwzpD4OrwX0J27CVGSQBAoqdFBkx7cgVrqFYBJiIYD-_qipwt-eFi3cvRFeYNDUyZGNwpu8tPwXLU_1iCt'
+=======
                 user: 'USER EMAIL ACCOUNT THAT SENDS EMAIL',
                 clientId: 'GENERATED CLIENTID',
                 clieentSecret: 'GENERATED CLIENT SECRET',
@@ -32,6 +56,7 @@ const xoauth2 = require('xoauth2');
                 clientToken: '',
                 accessToken: ''
 >>>>>>> 6942e54450636787e3f45a5708b4082c73398b83
+>>>>>>> 3422affbe8765f26bb510c65efa988403c15d004
            
         },
     });
