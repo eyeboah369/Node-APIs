@@ -38,10 +38,10 @@ const xoauth2 = require('xoauth2');
                 type: 'OAuth2',
 <<<<<<< HEAD
                 user: 'eyeboahcw@gmail.com',
-                clientId: '122144668851-94l16u0esjtln3or6u9m0v4akr8b68kn.apps.googleusercontent.com',
-                clientSecret: 'B7MGm4n-DoYvGus7qy_F-lMo',
-                refreshToken: '1/qWNVwYXXBF1kKxgo9LTw3R33XjLzTVpxc6-6kRkDizY',
-                accessToken: 'ya29.GlvSBjtngyPDJ7grazwYwbxl4k3B_P7l9iG97wbVjQAwzpD4OrwX0J27CVGSQBAoqdFBkx7cgVrqFYBJiIYD-_qipwt-eFi3cvRFeYNDUyZGNwpu8tPwXLU_1iCt'
+                    clientId: 'CLIENT ID FROM CONSOLE',
+                clientSecret: 'CLIENT SECRET FROM CONSOLE',
+                refreshToken: 'REFRESH TOKEN FROM OAUTH PLAYGROUND',
+                accessToken: 'ACCESS TOKEN FROM OAUTH PLAYGROUND'
 =======
                 user: 'USER EMAIL ACCOUNT THAT SENDS EMAIL',
                 clientId: 'GENERATED CLIENTID',
